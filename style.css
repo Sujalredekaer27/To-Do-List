@@ -1,0 +1,94 @@
+/* Modern Background Gradient */
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.todo-container {
+  max-width: 400px;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+  color: #4a148c;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+/* Input Area Colors */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+input {
+  flex-grow: 1;
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #764ba2;
+}
+
+button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+  background: #218838;
+  transform: scale(1.05); /* Slight "pop" effect */
+}
+
+/* Task List Styling */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f8f9fa;
+  margin-bottom: 10px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 5px solid #764ba2; /* Color accent on the side */
+  transition: all 0.3s ease;
+  color: #333;
+}
+
+li:hover {
+  transform: translateX(5px);
+  background: #fff;
+}
+
+/* Completion Style */
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+  border-left-color: #cbd5e0; /* Gray out the accent color */
+  background: #edf2f7;
+}
